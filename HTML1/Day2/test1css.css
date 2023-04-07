@@ -1,0 +1,90 @@
+/* universal selector */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* element selector */
+
+body{
+    /* background-image: url(); */
+    border-top: rgb(7,7,7);
+    border-style: solid;
+    border-color: rgb(173, 121, 131);
+    border-width: 3px;
+    background-color: rgb(194, 232, 243);
+
+}
+
+div{
+    width: 1150px;
+    height: 100px;
+    border: 10px;
+    border-style: groove;
+    border-color:lightslategray;
+    padding: 20px;
+    margin: 10px;
+}
+#first{
+    border-style: dashed;
+}
+#second{
+    border-style: double;
+}
+#third{
+    border-style: ridge;
+}
+.p1{
+    background-color:whitesmoke;
+}
+.first-para{
+    font-size: x-large;
+    color: rebeccapurple;
+}
+#p-1{
+    font-size: large;
+    font-style: italic;
+    background-color: bisque;
+}
+#p-2{
+    font-size:larger;
+    font-style: oblique;
+    background-color: beige;
+}
+#p-3{
+    font-size: large;
+    font-style: initial;
+    background-color: lightgray;
+}
+#first>h1{
+    font-family: 'Caveat', cursive;
+}
+#second>h1{
+    font-family: 'Shadows Into Light', cursive;
+}
+#third>h1{
+    font-family: 'Gruppo', cursive;
+}
+span{
+    color: blue;
+}
+/* #p-1 > span{
+    color: darkgreen;
+}
+#p-2 > span{
+    color: darkred;
+}
+#p-3 > span{
+    color: saddlebrown;
+} */
+
+#first span{
+    color: darkblue;
+}
+#second span{
+    color: darkorange;
+}
+#third span{
+    color: darkslategrey;
+}

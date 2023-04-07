@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test2css.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:blueviolet;" id="heading" class="head" name="name">Introduction to dev tools</h1>
+    <script>
+        console.log('testing console dev tools');
+        console.error('error log');
+        console.warn('warn log!...')
+        console.table(
+            [
+            {"name":"John Doe","age":"23"},
+            {"name": "Jane Doe","age":"28"}
+            ]
+            );
+
+        console.group('groupInfo');
+        console.log('Harry Potter');
+        console.log('Hermonie Granger');
+        console.log('Ron Weasley');
+        console.groupEnd('groupInfo');
+        console.info(document.URL);
+        console.dir(document);
+        localStorage.setItem("topic","dev tools after lunch");
+        console.log(localStorage.getItem('topic'));
+
+       // document.cookie = new cookie("url",'https://secureurl.com');
+       document.cookie= "url=https://secureurl.com";
+       document.cookie= "company=UST"
+
+       //ctrl+shift+p ===> 
+    </script>
+    <header>
+        <h1>Archana S</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="academic_details.html">Academic Details</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact me</a>
+    </nav>
+    <main>
+        <section>
+            <h2>This page is about me</h2>
+            <div>Education : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolorem vel voluptatum, minus numquam cum et necessitatibus minima pariatur natus, repellendus dignissimos id odit magnam? Hic officiis delectus quod modi.</div>
+            <div>Hobbies : Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus delectus optio, quisquam repudiandae cumque rem quis quae maxime beatae corrupti nobis hic cupiditate placeat ipsa non iste iusto maiores magnam?</div>
+            <div>Goals : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, maxime ut adipisci perspiciatis non molestiae culpa nostrum ea dolorum, officiis, totam ex illum ipsam iste eum consequatur autem aspernatur minus!</div>
+        </section>
+    </main>
+    <footer>
+        <h3>copyright@archana</h3>
+    </footer>
+</body>
+</html>

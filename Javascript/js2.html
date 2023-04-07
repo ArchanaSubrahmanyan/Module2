@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+    <script lang="Javascript">
+
+        var a=10;
+        function add(){
+            return a+20;
+        }
+        function add(a,b){
+            return a+b;
+        }
+        // alert(add());
+        // alert(add(20,30));
+
+        function fact(num){
+            if(num==0){
+                return 1;
+            }
+            else{
+               return num * fact(num-1);
+            }
+            
+        }
+        alert(fact(5));
+        document.write(add(20,30)); //document.write--->to show to the end user
+        console.log(add(37,87));    //console.log--->for the developer for debugging purpose
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+label {
+    font-family: 'Fira Sans', sans-serif;
+}
+    </style>
+</head>
+<body>
+   
+
+  <label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+<input type="time" list="popularHours" />
+<datalist id="popularHours">
+  <option value="12:00"></option>
+  <option value="13:00"></option>
+  <option value="14:00"></option>
+</datalist>
+<label for="tick">Tip amount:</label>
+<input type="range" list="tickmarks" min="0" max="100" id="tick" name="tick" />
+<datalist id="tickmarks">
+  <option value="0"></option>
+  <option value="10"></option>
+  <option value="20"></option>
+  <option value="30"></option>
+</datalist>
+<embed type="video/webm"
+       src="images/oogy.mp4"
+       width="250"
+       height="200">
+       <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="b" name="b" value="50" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">60</output>
+      </form>
+      <label for="file">File progress:</label>
+
+<progress id="file" max="100" value="70"> 70% </progress>
+</body>
+</html>

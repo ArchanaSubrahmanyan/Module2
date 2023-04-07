@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Registration form</title>
+    <style>
+        .container{
+            /* background-color: rgb(224, 216, 233); */
+            background-image: linear-gradient(#9796F0,#FBC7D4);
+            border: 2px solid rgb(83, 10, 83);
+            border-radius: 5px;
+            padding: 5%;
+            width: 700px;
+            
+        }
+        h3{
+            text-align: center;
+            color: black;
+           
+        }
+        body{
+           background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style="color: black;">rediff.com</h2>
+    </header>
+    <hr>
+    <main>
+        <h3>Create a rediffmail account</h3>
+        <div class="container form-group">
+            <form name="regForm" action="" class="mb-4"></form>
+            <table>
+                <tr>
+                    <td><label for="fullname">Full Name*:</label></td>
+                    <td><input type="text" class="form-control" name="fullname" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="choosemail">Choose a mail:</label></td>
+                    <td><input type="email" class="form-control" name="choosemail" placeholder="abc@gmail.com"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pass">Enter password:</label></td>
+                    <td><input type="password" class="form-control" name="pass"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="retypepass">Retype password:</label></td>
+                    <td><input type="password" class="form-control" name="retypepass"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="altemail">Alternate emailid:</label></td>
+                    <td><input type="email" class="form-control" name="altemail"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="altemailop">Check if you don't have alternate mailid:</label></td>
+                    <td><input type="checkbox"  name="altemailop"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="dob">Choose DOB:</label></td>
+                    <td><input type="date" class="form-control" name="dob"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="mobile" >Mobile No:</label></td>
+                    <td>
+                    <select name="countryCode" class="form-control">
+                        <option value="+91">+91 India</option>
+                        <option value="+1">+1 USA/Canada</option>
+                        <option value="+44">+44 Great Britain</option>
+
+                    </select><input type="text" class="form-control" name="no"></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>Male &nbsp;&nbsp;<input type="radio" name="gender" value="Male">
+                    Female &nbsp;&nbsp;<input type="radio" name="gender" value="Female">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="country">Choose Country:</label></td>
+                    <td><select name="country" id="" class="form-control">
+                        <option value="ind">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">Great Britain</option>
+                        <option value="aus">Australia</option>
+                    </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="city">Choose City:</label></td>
+                    <td><select name="city" id="" class="form-control">
+                        <option value="tri">Trivandrum</option>
+                        <option value="mum">Mumbai</option>
+                        <option value="ny">New York</option>
+                        <option value="cal">California</option>
+                    </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><input class="btn btn-primary" type="submit" value="Register"></td>
+                    <td><input class="btn btn-secondary" type="reset" value="Clear"></td>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+</body>
+</html>
